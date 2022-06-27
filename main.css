@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Mistral;
+  src: url(resources/fonts/MISTRAL.TTF);
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f2025;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2025;
+  padding: 1rem 4rem;
+  border-bottom: 2px solid #efefef10;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  font-family: Mistral;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.title a {
+  text-decoration: none;
+  color: #ffc700;
+  cursor: pointer;
+}
+
+.title a:hover {
+  color: #ffc700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  list-style: none;
+  margin: 0px 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #efefef75;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-link a:hover {
+  color: #efefef;
+}
+
+.active a {
+  color: #ffc700;
+}
+
+.menu {
+  display: none;
+  font-size: 1.4rem;
+  color: #efefef;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: 2.5rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .activate {
+    display: block !important;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 4.6rem;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    color: #efefef;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 1.5rem 0rem;
+  }
+
+  .nav-link:hover {
+    background-color: #303135;
+  }
+}
