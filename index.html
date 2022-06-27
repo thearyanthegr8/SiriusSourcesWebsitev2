@@ -12,7 +12,7 @@
 
 <body>
     <header class="navbar">
-        <h1 class="title"><a href="#">Sirius Sources</a></h1>
+        <h1 class="title"><a href="#">Sirius Sources Company</a></h1>
         <span class="menu"><i class="fa-solid fa-bars"></i></span>
         <nav class="nav">
             <ul class="nav-links">
@@ -26,6 +26,113 @@
             </ul>
         </nav>
     </header>
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.01</div>
+                        <div class="slide-title">Apparels</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/Image1.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/Image1.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/Image1.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.02</div>
+                        <div class="slide-title">Fashion Accessories</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/Image2.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/Image2.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/Image2.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.03</div>
+                        <div class="slide-title">Hard Goods</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/Image4.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/Image4.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/Image4.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.04</div>
+                        <div class="slide-title">Lighting</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/Light2.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/Light2.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/Light2.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.05</div>
+                        <div class="slide-title">Leather</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/Image5.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/Image5.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/Image5.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="float-left">
+                        <div class="numbertext">.06</div>
+                        <div class="slide-title">Home Textiles</div>
+                        <div class="learn-more">-- Learn More</div>
+                    </div>
+                    <div class="float-right">
+                        <div class="image-1"><img src="resources/img//slideshow/HT3.jpg" alt=""></div>
+                        <div class="image-2"><img src="resources/img//slideshow/HT3.jpg" alt=""></div>
+                        <div class="image-3"><img src="resources/img//slideshow/HT3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="bottom-container">
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <a class="next" onClick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
     <script>
         const hamburger = document.querySelector(".menu");
         const navMenu = document.querySelector(".nav");
@@ -34,6 +141,39 @@
 
         function mobileMenu() {
             navMenu.classList.toggle("activate")
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slideactive", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " slideactive";
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            setTimeout(showSlides, 5000);
         }
 
     </script>

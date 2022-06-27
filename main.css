@@ -11,6 +11,7 @@
 
 body {
   background-color: #1f2025;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -21,8 +22,10 @@ body {
   padding: 1rem 4rem;
   border-bottom: 2px solid #efefef10;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .title {
@@ -75,6 +78,7 @@ body {
   display: none;
   font-size: 1.4rem;
   color: #efefef;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
@@ -93,6 +97,8 @@ body {
   .nav {
     display: none;
     position: absolute;
+    background-color: #1f2025;
+    z-index: 1000;
     top: 4.6rem;
     left: 0;
     width: 100%;
@@ -111,4 +117,145 @@ body {
   .nav-link:hover {
     background-color: #303135;
   }
+}
+
+.slideshow {
+  position: relative;
+  z-index: 0;
+  height: calc(100vh - 4.6rem);
+}
+
+.slideshow-container {
+  margin-top: 4.6rem;
+  width: 100%;
+  z-index: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffc700;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right: 5rem;
+}
+
+.next:hover {
+  color: #aa8707;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 0.5rem;
+  background-color: #efefef45;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideactive,
+.dot:hover {
+  background-color: #ffc700;
+  height: 25px;
+  width: 25px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide {
+  padding: 0 0 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-1 img,
+.image-2 img,
+.image-3 img {
+  height: inherit;
+  width: inherit;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  position: relative;
+  width: 15rem;
+  height: 30rem;
+  margin-left: 2.5rem;
+}
+
+.image-1 img {
+  object-position: left;
+  object-fit: cover;
+}
+
+.image-2 img {
+  object-position: center;
+  object-fit: cover;
+}
+
+.image-3 img {
+  object-position: right;
+  object-fit: cover;
+}
+
+.float-right {
+  display: flex;
+}
+
+.numbertext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #efefef;
+}
+
+.slide-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  color: #efefef;
+  margin: 1rem 0 2rem 0;
+}
+
+.learn-more {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dot-container {
+  position: relative;
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-container {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
 }
