@@ -265,6 +265,10 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
+  .slideshow {
+    height: auto;
+  }
+
   .slide {
     display: block;
     text-align: center;
@@ -300,6 +304,7 @@ body {
   .bottom-container {
     position: absolute;
     margin-top: 0;
+    padding-bottom: 4vh;
   }
 
   .next {
@@ -395,4 +400,32 @@ body {
 
 .about-us h2 {
   font-weight: 400;
+}
+
+@media screen and (max-width: 1050px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-container {
+    min-height: auto;
+    max-height: auto;
+    padding: 4vh 0;
+  }
+
+  .about-one {
+    transform: rotate(0deg);
+    font-size: 4rem;
+  }
+
+  .about-two {
+    transform: rotate(180deg);
+    font-size: 4rem;
+  }
+
+  .about-us {
+    min-height: auto;
+    padding: 5vh 10vw;
+  }
 }
