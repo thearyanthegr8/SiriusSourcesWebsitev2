@@ -2,6 +2,10 @@
   font-family: Mistral;
   src: url(resources/fonts/MISTRAL.TTF);
 }
+@font-face {
+  font-family: Shadows Into Light Two;
+  src: url(resources/fonts/ShadowsIntoLightTwo-Regular.ttf);
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
@@ -186,7 +190,7 @@ body {
 }
 
 .slide {
-  padding: 0 0 0 4rem;
+  padding: 0 4rem 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -203,9 +207,9 @@ body {
 .image-2,
 .image-3 {
   position: relative;
-  width: 15rem;
-  height: 30rem;
-  margin-left: 2.5rem;
+  width: 20vw;
+  height: 75vh;
+  margin-left: 1rem;
 }
 
 .image-1 img {
@@ -236,7 +240,7 @@ body {
 
 .slide-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #efefef;
   margin: 1rem 0 2rem 0;
 }
@@ -255,7 +259,20 @@ body {
 
 .bottom-container {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 2vh;
   display: flex;
   align-items: center;
+}
+
+.quote-container {
+  margin: 6vh 6vw;
+  border: 2px solid #ffc700;
+  padding: 7vh 7vw;
+  text-align: center;
+}
+
+.quote-container p {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.4rem;
+  color: #efefef;
 }
