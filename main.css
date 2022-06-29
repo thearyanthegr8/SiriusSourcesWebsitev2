@@ -341,14 +341,15 @@ body {
   display: flex;
   flex-direction: row;
   min-height: calc(100vh - 4.6rem);
-  height: 100%;
+  height: calc(100vh - 4.6rem);
   max-height: fit-content;
   position: relative;
 }
 
 .about-container {
   position: relative;
-  min-height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.6rem);
+  height: calc(100vh - 4.6rem);
   max-height: fit-content;
   background-color: #ffc700;
   flex: 1;
@@ -366,25 +367,17 @@ body {
   text-align: center;
 }
 
-.about-two {
-  transform: rotate(90deg);
-  font-size: 5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #1f2025;
-  text-align: center;
-}
-
 .about-us {
-  min-height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.6rem);
+  height: 100%;
   max-height: fit-content;
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2vh 5vw;
+  padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #efefef;
@@ -420,8 +413,7 @@ body {
   }
 
   .about-two {
-    transform: rotate(180deg);
-    font-size: 4rem;
+    display: none;
   }
 
   .about-us {
