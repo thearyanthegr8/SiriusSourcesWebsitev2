@@ -11,7 +11,7 @@
     <link href="pattern.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <header class="navbar">
         <h1 class="title"><a href="#">Sirius Sources Company</a></h1>
         <span class="menu"><i class="fa-solid fa-bars"></i></span>
@@ -196,7 +196,9 @@
             </p>
         </div>
         <div class="sources-right">
-            <img src="resources/img/images/sourcing.png" alt="">
+            <div class="pattern-dots-md">
+                <img src="resources/img/images/sourcing.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -205,28 +207,246 @@
             <div class="product-container">
                 <h1 class="product-h1">Product Categories</h1>
                 <div class="product-categories">
-                    <div class="product">
+                    <button class="product" id="apparels-modal-btn"
+                        onclick="document.getElementById('apparel-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/Apparels.png" alt="">
-                    </div>
-                    <div class="product">
+                        <div class="overlay">
+                            <h1>Apparels</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
+                    <button class="product" id="fashion-modal-btn"
+                        onclick="document.getElementById('fashion-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/fashion accessories.jpg" alt="">
-                    </div>
-                    <div class="product">
+                        <div class="overlay">
+                            <h1>Fashion Accessories</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
+                    <button class="product" id="hard-modal-btn"
+                        onclick="document.getElementById('hard-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/Hard Goods.jpg" alt="">
-                    </div>
-                    <div class="product">
+                        <div class="overlay">
+                            <h1>Hard Goods</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
+                    <button class="product" id="home-modal-btn"
+                        onclick="document.getElementById('home-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/Home Textiles.jpg" alt="">
-                    </div>
-                    <div class="product">
+                        <div class="overlay">
+                            <h1>Home Textiles</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
+                    <button class="product" id="leather-modal-btn"
+                        onclick="document.getElementById('leather-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/Leather.jpg" alt="">
-                    </div>
-                    <div class="product">
+                        <div class="overlay">
+                            <h1>Leather</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
+                    <button class="product" id="lighting-modal-btn"
+                        onclick="document.getElementById('lighting-modal').style.display='flex'">
                         <img class="card-img" src="resources/img/products/Lighting.jpg" alt="">
-                    </div>
+                        <div class="overlay">
+                            <h1>Lighting</h1>
+                            <p>Click to see more</p>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="quality">
+        <div class="quality-left">
+            <div class="pattern-dots-md">
+                <img src="resources/img/images/Quality.png" alt="">
+            </div>
+        </div>
+        <div class="quality-right">
+            <h1>Quality Standards & Compliances</h1>
+            <p>
+                At Sirius, Quality is of prime importance. Sirius will only work with factories who are socially
+                responsible and comply with the ILO’s international labour standards. By doing so we ensure that the
+                merchandise sold by our clients is free of any contingency that exists with production coming from
+                non-compliant production facilities.
+
+                <br>
+                <br>
+
+                Sirius conducts a multi-phase quality assurance program. Our personnel are stationed at the factories
+                during the production period. We monitor on-line production, mid-production inspections and a review
+                when production is finished. By employing this technique we are able to eliminate last minute rejections
+                and therefore avoid shipping delays. We also work closely with the Testing Laboratories who conform to
+                International Standards laid down by our clients.
+            </p>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="team-left">
+            <h1>Our Team</h1>
+            <p>
+                At Sirius, Quality is of prime importance. Sirius will only work with factories who are socially
+                responsible and comply with the ILO’s international labour standards. By doing so we ensure that the
+                merchandise sold by our clients is free of any contingency that exists with production coming from
+                non-compliant production facilities.
+                <br>
+                <br>
+                Sirius conducts a multi-phase quality assurance program. Our personnel are stationed at the factories
+                during the production period. We monitor on-line production, mid-production inspections and a review
+                when production is finished. By employing this technique we are able to eliminate last minute rejections
+                and therefore avoid shipping delays. We also work closely with the Testing Laboratories who conform to
+                International Standards laid down by our clients.
+            </p>
+        </div>
+        <div class="team-right">
+            <div class="pattern-dots-md">
+                <img src="resources/img/images/team.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-navbar">
+        <div class="section-1">
+            <div class="left-section">Sirius Sources Company</div>
+            <div class="right-section">
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <hr>
+        <div class="section-2">
+            <div class="section-card">
+                <i class="fa-solid fa-map"></i>
+                <p>Greater Noida, India</p>
+            </div>
+            <div class="section-card">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 120 4292068</p>
+            </div>
+            <div class="section-card">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>reachus@siriusmerchandising.com</p>
+            </div>
+        </div>
+        <div class="section-3">
+            © Since 2004 Sirius Sources Company - All rights reserved | Designed & Maintained by Aryan
+        </div>
+    </div>
+
+    <!--Modals-->
+
+    <div class="modal" id="apparel-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('apparel-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Apparels</h1>
+            <div class="modal-slideshow">
+                <div class="modal-slideshow-container">
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">1 / 11</div>
+                        <img src="resources/img/edited/apparels/1.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">2 / 11</div>
+                        <img src="resources/img/edited/apparels/2.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">3 / 11</div>
+                        <img src="resources/img/edited/apparels/3.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">4 / 11</div>
+                        <img src="resources/img/edited/apparels/4.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">5 / 11</div>
+                        <img src="resources/img/edited/apparels/5.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">6 / 11</div>
+                        <img src="resources/img/edited/apparels/6.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">7 / 11</div>
+                        <img src="resources/img/edited/apparels/7.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">8 / 11</div>
+                        <img src="resources/img/edited/apparels/8.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">9 / 11</div>
+                        <img src="resources/img/edited/apparels/9.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">10 / 11</div>
+                        <img src="resources/img/edited/apparels/10.png" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-mySlides fade">
+                        <div class="modal-numbertext">11 / 11</div>
+                        <img src="resources/img/edited/apparels/11.png" alt="" class="modal-img">
+                    </div>
+
+                    <a class="modal-prev" onclick="plusSlides(-1)"></a>
+                    <a class="modal-next" onclick="plusSlides(+1)"></a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="modal-dot" onclick="currentSlide(1)"></span>
+                    <span class="modal-dot" onclick="currentSlide(2)"></span>
+                    <span class="modal-dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="fashion-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('fashion-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Fashion Accessories</h1>
+        </div>
+    </div>
+    <div class="modal" id="hard-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('hard-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Hard Goods</h1>
+        </div>
+    </div>
+    <div class="modal" id="home-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('home-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Home Textiles</h1>
+        </div>
+    </div>
+    <div class="modal" id="leather-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('leather-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Leather</h1>
+        </div>
+    </div>
+    <div class="modal" id="lighting-modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('lighting-modal').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1>Lighting</h1>
+        </div>
+    </div>
+
+    <!--End Modal-->
 
     <script>
         const hamburger = document.querySelector(".menu");
@@ -266,7 +486,6 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " slideactive";
         }
-
     </script>
 </body>
 

@@ -107,7 +107,7 @@
   background-size: calc(10 * 0.5px) calc(10 * 0.5px);
 }
 .pattern-dots-md {
-  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-image: radial-gradient(#ffc700 1px, transparent 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
 }
 .pattern-dots-lg {
