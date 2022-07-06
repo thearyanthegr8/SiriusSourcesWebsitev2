@@ -33,15 +33,16 @@ body {
 }
 
 .title {
-  font-family: Mistral;
   font-weight: 100;
   font-size: 2rem;
+  display: flex;
 }
 
 .title a {
   text-decoration: none;
   color: #ffc700;
   cursor: pointer;
+  display: flex;
 }
 
 .title a:hover {
@@ -399,8 +400,7 @@ body {
   .about {
     display: flex;
     flex-direction: column;
-    align-items: initial;
-    justify-content: initial;
+    width: 100%;
     height: fit-content;
   }
 
@@ -408,6 +408,8 @@ body {
     min-height: auto;
     max-height: fit-content;
     padding: 4vh 0;
+    width: 100%;
+    display: block;
   }
 
   .about-one {
@@ -574,7 +576,7 @@ img {
 }
 
 .overlay h1 {
-  color: #efefef;
+  color: #ffc700;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -710,7 +712,16 @@ img {
   }
 
   .quality-left {
-    margin: 0 0 5vh 0;
+    margin: 0 0 0 0;
+  }
+
+  .quality-right {
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 
