@@ -13,6 +13,11 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 4.5rem;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1f2025;
   overflow-x: hidden;
@@ -36,6 +41,7 @@ body {
   font-weight: 100;
   font-size: 2rem;
   display: flex;
+  font-family: "Mistral";
 }
 
 .title a {
@@ -75,7 +81,8 @@ body {
   color: #efefef;
 }
 
-.active a {
+.nav-link a:active,
+.nav-link a:focus {
   color: #ffc700;
 }
 
